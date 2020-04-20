@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Favourite Colors</title>
+        <style>
+            .rectangle{
+                width:30%;
+                height:80px;
+            }
+    
+            #rectangleWrapper{
+                padding:50px 50px 0px 50px;
+            }
+        </style>
+    
+        <script>
+            const callMe = () =>{
+                const div = document.getElementById('rectangleWrapper');
+                const id = div.getElementsByClassName('rectangle');
+    
+                console.log("Here are the rectangle IDs");
+    
+                for(let ele of id){
+                    console.log(ele.id);
+                }
+
+            };
+        </script>
+    </head>
+    <body onload="callMe()">
+        <h1>Favourite Colors</h1>
+        <h2>Here are my colored rectangles</h2>
+
+        <div id="rectangleWrapper">
+            <div id = 'r1' style = "background-color:#FF5733;"class="rectangle"></div>
+            <p>#FF5733</p>
+            <div id = 'r2' style = "background-color:#AFE920;"class="rectangle"></div>
+            <p>#AFE920</p>
+            <div id = 'r3' style = "background-color:#F9F523;"class="rectangle"></div>
+            <p>#F9F523</p>
+            <div id = 'r4' style = "background-color:#23F98B;"class="rectangle"></div>
+            <p>#23F98B</p>
+            <div id = 'r5' style = "background-color:#15CCF1;"class="rectangle"></div>
+            <p>#15CCF1</p>
+            <div id = 'r6' style = "background-color:#15A4F1;"class="rectangle"></div>
+            <p>#15A4F1</p>
+            <div id = 'r7' style = "background-color:#1519F1;"class="rectangle"></div>
+            <p>#1519F1</p>
+            <div id = 'r8' style = "background-color:#6F15F1;"class="rectangle"></div>
+            <p>#6F15F1</p>
+            <div id = 'r9' style = "background-color:#C815F1;"class="rectangle"></div>
+            <p>#C815F1</p>
+            <div id = 'r10' style = "background-color:#F11542;"class="rectangle"></div>
+            <p>#F11542</p>
+        </div>
+    </body>
+</html>
