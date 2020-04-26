@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Helvetica;
+    background: #34495e;
+    color:white;
+    width:100%;
+}
+
+.box{
+    margin:0 15%;
+    padding:40px;
+    background:#27394d;
+    border:1px solid black;
+    box-shadow: 2px 5px #888888;
+}
+
+.box h1{
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+}
+
+div>h3,h4{
+    color:#7ca4fa
+}
+
+hr{
+    border:1px dotted white;
+    margin-top:30px;
+}
+h1+h3{
+    border:1px solid black;
+    background:black;
+    margin:20px 15% 40px;
+    border-radius:24px;
+    padding:10px;
+    text-align:center;
+    color:white;
+}
+#sign,#nav{
+    margin:30px;
+    text-align:center;
+}
+.btn{
+    background-color: #9cbafc;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #3b5285;
+}
+
+.btn-dash,.btn-acc{
+    background-color: #505869;
+    text-transform: uppercase;
+}
+
+.btn-dash:hover,.btn-acc:hover{
+    background-color: #303f5f;
+}
+
+.btn-log{
+    background-color: rgb(230, 93, 93);
+    text-transform: uppercase;
+}
+.btn-log:hover{
+    background-color: rgb(245, 39, 39);
+}
+
+#sign-up,#log-in,#account,#list-header,#list-items{
+    text-align:left;
+    width:80%;
+    clear:both;
+}
+
+label{
+    font-size:13px;
+}
+input{
+    width:100%;
+    clear:both;
+    border-radius:24px;
+    line-height:25px;
+    font-size:16px;
+
+}
+input[type="checkbox"]{
+    clear:none;
+    width:auto;
+}
+
+.btn-sign{
+    background-color: rgb(183, 243, 134);
+    display:block;
+}
+
+.btn-sign:hover{
+    background-color: rgb(123, 179, 78);
+}
+
+.error{
+    color:red;
+    font-weight:12px;
+}
+
+ul{
+    margin:40px;
+}
+
+button{
+    display:inline;
+}
+ul li{
+    padding:10px;
+}
+ul li a{
+    color:white;
+}
+
+#list-items ul li{
+    cursor: pointer;
+}
+
+.completed{
+    color:greenyellow;
+    text-decoration:underline;
+    list-style-type: square;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display:block;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>To-Do List</title>
+    </head>
+
+    <body>
+        <div class="box">
+
+            <h1>To-Do List</h1>
+            <h3>One place for all your activities</h3>
+    
+            <div id="sign">
+                <a href="#" id="signup" class="btn">Sign Up</a>
+                <a href="#" id="login" class="btn">Log In</a>
+            </div>
+    
+            <div id="nav" class="hide">
+                <p id="welcome"></p>
+                <a href="#" class="btn btn-acc" id = "account-settings">Account Settings</a>
+                <a href="#" class="btn btn-dash" id = "dashboard">Dashboard</a>
+                <a href="#" class="btn btn-log" id = "logout">Logout</a>
+                <hr>
+            </div>
+    
+            <div id="sign-up" class="hide">
+                <h3>Sign up</h3>
+    
+                <form id ="signform"action="#">
+                    <p>
+                        <label for="signfirst">First Name:</label>
+                        <input type="text" name="first-name" id="signfirst">
+                    </p>
+                    <p>
+                        <label for="signlast">Last Name:</label>
+                        <input type="text" name="last-name" id="signlast">
+                    </p>
+                    <p>
+                        <label for="signemail">Email:</label>
+                        <input type="email" name="email" id="signemail">
+                    </p>
+                    <p>
+                        <label for="signpassword">Password:</label>
+                        <input type="password" name="password" id="signpassword">
+                    </p>
+                    <label for="signterms"></label>
+                    <input type="checkbox" name="terms" id="signterms">I agree to the Terms of Use
+
+                    <p id = "signerror"class="error">Error in the provided inputs</p>
+
+                    <button type="submit" class = "btn btn-sign" value="Sign Up">Sign Up</button>
+                </form>
+            </div>
+    
+            <div id="log-in" class="hide">
+                <form id="logform"action="#">
+                    <p>
+                        <label for="logemail">Email:</label>
+                        <input type="email" name="email" id="logemail">
+                    </p>
+                    <p>
+                        <label for="logpassword">Password:</label>
+                        <input type="password" name="password" id="logpassword">
+                    </p>
+                    <p id="logerror"class="error">Error in the provided inputs</p>
+                    <button type="submit" class ="btn btn-sign"value="Log In">Log In</button>
+                </form>
+            </div>
+    
+    
+            <div id="account" class="hide">
+                <h3>Account information</h3>
+    
+                <form id="updateform"action="#">
+                    <p>
+                        <label for="updatefirst">First Name:</label>
+                        <input type="text" name="updatefirst" id="updatefirst">
+                    </p>
+                    <p>
+                        <label for="updatelast">Last Name:</label>
+                        <input type="text" name="last-name" id="updatelast">
+                    </p>
+                    <p>
+                        <label for="updateemail">Email:</label>
+                        <input type="email" name="email" id="updateemail">
+                    </p>
+                    <p>
+                        <label for="updatepassword">
+                            Password:<small>(*Leaving password blank would not update the password)</small>
+                        </label>
+                        <input type="password" name="password" id="updatepassword">
+                    </p>
+                    <p id="updateerror"class="error">Error in the provided inputs</p>
+                    <button type="submit" class ="btn btn-sign"value="update account">Update</button>
+                </form>
+            </div>
+    
+            <div id="dash" class="hide">
+                <h3>Dashboard</h3>
+                <ul id="to-do-list">
+                </ul>
+    
+                <a href="#" id="new-list"class="btn btn-dash">Create New to-do List</a>
+            </div>
+    
+            <div id="list" class="hide">
+                <div id="list-header">
+                    <h3>List Name</h3>
+                    
+                    <form action="#" id="headerform">
+                        <p>
+                            <input type="text" id = "headername" placeholder="Enter new name of the list">
+                        </p>
+                        <p id="headererror"class=error>Error in the provided inputs</p>
+                        <button type="submit" class="btn btn-dash"value="rename list">Rename List</button>
+                    </form>
+                </div>
+                <div id="list-items">
+                    <h4>List Items</h4>
+                    <ul id="to-do-items">
+                    </ul>
+    
+                    <form action="#" id="itemform">
+                        <p></p><input type="text" id ="itemname" placeholder="Enter new item">
+                        <p id="itemerror" class="error">Error in the provided inputs</p>
+                        <button type="submit" class="btn btn-dash"id="update-item"value="rename list">Add Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
